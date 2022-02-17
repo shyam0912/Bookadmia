@@ -1,0 +1,139 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+nav{
+	height: 80px;
+	background: #2c3e50;
+	width: 100%;
+}
+li{
+	font-family: sans-serif;
+}
+nav img{
+	width: 150px;
+	position: absolute;
+	top: 10px;
+	left: 1%;
+}
+nav ul{
+	float: right;
+	margin-right: 25px;
+	position: relative;
+	left: -0px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 15px;
+}
+nav ul li a{
+	position: relative;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+nav ul li a:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: white;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .4s liner;
+}
+nav ul li a:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.dropdown{
+	position: relative;
+	top: 30px;
+	left: 1475px;
+}
+.dbt{
+	background-color: #2c3e50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-transform: uppercase;
+	webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	position: relative;
+	top: -4.5px;
+	left: -50px;
+}
+.dbt:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.items{
+	font-family: sans-serif;
+	display:none;
+    position: relative;
+	left: -50px;
+	top: -8px;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.items a {
+	color:black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.items a:hover {background-color: #ddd;}
+
+.dropdown:hover .items {display: block;}
+
+.dropdown:hover .dbt {background-color:none;}
+
+.table{
+	position: absolute;
+	left: 750px;
+	top: 230px;
+	transform: translate(-50%,-50%);
+	border-collapse: collapse;
+	width: 800px;
+	height: 200px;
+	border: 1px solid #bdc3c7;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.table tr{
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+.table th,.table td{
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	
+}
+#header{
+	background-color: #16a085;
+	color: #fff;
+	
+}
+.table tr:hover{
+	background-color: #f5f5f5;
+	transform: scale(1.02);
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}

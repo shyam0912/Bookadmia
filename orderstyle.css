@@ -1,0 +1,90 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+nav{
+	height: 80px;
+	background: #2c3e50;
+}
+li{
+	font-family: sans-serif;
+}
+nav img{
+	width: 150px;
+	position: absolute;
+	top: 10px;
+	left: 1%;
+}
+nav ul{
+	float: right;
+	margin-right: 25px;
+	position: relative;
+	left: 0px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 15px;
+}
+nav ul li a{
+	position: relative;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+nav ul li a:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: white;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .4s liner;
+}
+nav ul li a:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.table{
+	position: absolute;
+	left: 750px;
+	top: 200px;
+	transform: translate(-50%,-50%);
+	border-collapse: collapse;
+	width: 800px;
+	height: 200px;
+	border: 1px solid #bdc3c7;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.table tr{
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+.table th,.table td{
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	
+}
+#header{
+	background-color: #16a085;
+	color: #fff;
+	
+}
+.table tr:hover{
+	background-color: #f5f5f5;
+	transform: scale(1.02);
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+

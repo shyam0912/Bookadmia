@@ -1,0 +1,168 @@
+body{
+	background-image: url("back.jpg");
+	background-size: cover;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+nav{
+	height: 80px;
+	background: #2c3e50;
+	width: 100%;
+}
+li{
+	font-family: sans-serif;
+}
+nav img{
+	width: 150px;
+	position: absolute;
+	top: 10px;
+	left: 1%;
+}
+nav ul{
+	float: right;
+	margin-right: 25px;
+	position: relative;
+	left: 0px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 15px;
+}
+nav ul li a{
+	position: relative;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+nav ul li a:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: white;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .4s liner;
+}
+nav ul li a:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.dropdown{
+	position: relative;
+	top: 30px;
+	left: 1475px;
+}
+.dbt{
+	background-color: #2c3e50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-transform: uppercase;
+	webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	position: relative;
+	top: -4.5px;
+	left: -50px;
+}
+.dbt:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.items{
+	font-family: sans-serif;
+	display:none;
+    position: relative;
+	left: -50px;
+	top: -8px;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.items a {
+	color:black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.items a:hover {background-color: #ddd;}
+
+.dropdown:hover .items {display: block;}
+
+.dropdown:hover .dbt {background-color:none;}
+
+.formbox{
+    width:480px;
+	height:620px;
+	position:relative;
+	top: 10px;
+	left: 50px;
+	margin:2% auto;
+	background:#191919;
+	padding:10px;
+    overflow: hidden;
+	border-radius: 10px;
+}
+.form input[type=text],.form textarea{
+	font-family: sans-serif;
+	border: 2px solid #3498db;
+	background: none;
+	display: block;
+	margin: 15px 10px;
+	padding: 5px 5px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 10px;
+	transition: 0.25s;
+}
+.form input[type=text]:focus,.form textarea:focus{
+	width: 250px;
+	border-color: #2ecc71;
+}
+.file input[type=file]{
+	
+}
+label{
+	color: white;
+}
+.form input[type=submit]{
+	  background-color: black;
+  border: 2px solid #008CBA;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+legend{
+	display: block;
+	padding: 0px 20px;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	font-size: 11px;
+	font-weight: 700;
+	color: white;
+}
+
+fieldset{
+	padding: 30px;
+}
